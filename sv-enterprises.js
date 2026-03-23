@@ -1,4 +1,18 @@
 
+const brandSwiper = new Swiper(".brandSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: true,
+    breakpoints: {
+        1400: { slidesPerView: 5 },
+        1200: { slidesPerView: 4 },
+        900: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        0: { slidesPerView: 1 },
+    }
+});
+
 const navMenu = document.querySelector('.nav-menu');
 const toggle = document.querySelector(".toggle")
 
@@ -56,19 +70,7 @@ const slideSwiper = new Swiper(".slide-swiper", {
     },
 });
 
-const brandSwiper = new Swiper(".brandSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: true,
-    breakpoints: {
-        1400: { slidesPerView: 5 },
-        1200: { slidesPerView: 4 },
-        900: { slidesPerView: 3 },
-        768: { slidesPerView: 2 },
-        0: { slidesPerView: 1 },
-    }
-});
+
 
 const faqItems = document.querySelectorAll(".faq-item");
 
