@@ -954,6 +954,21 @@
     <!-- swiper slide -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="sv-enterprises.js"></script>
+    <script>
+    const brandSwiper = new Swiper(".brandSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: true,
+    breakpoints: {
+        1400: { slidesPerView: 5 },
+        1200: { slidesPerView: 4 },
+        900: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        0: { slidesPerView: 1 },
+    }
+});
+    </script>
 </body>
 
 </html>
